@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'robo';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+
+:root{
+    --cor1: #c5ebde;
+    --cor2: #84E1AD;
+    --cor3: #3DDC84; 
+    --cor4: #2Fa866;
+    --cor5: #1A5C38;
+    --fonte1: robo;
+    --fonte2: 'Bebas Neue'
+}
+
+*{
+    line-height: 1.5em;
+}
+
+body{
+    background-color: var(--cor2);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3) , var(--cor5));
+    text-align: center;
+    color: white;
+    min-width: 280px;
+}
+
+header > h1{
+    font-family: var('Bebas Neue'), cursive;
+    padding: 0.3%;
+    margin-top: 0;
+}
+
+header > h2{
+    font-family: var('Bebas Neue'), cursive;
+}
+
+nav{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+
+.menu{
+    padding: 10px 20px;
+}
+
+.menu:hover{
+    background-color: var(--cor3);
+    a{
+        color: var(--cor5);
+    }
+}
+
+div.menu > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 280px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 0px 0px 16px 16px;
+}
+
+main img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main > section > article > h1{
+    font-family: var(--fonte1), sans-serif;
+    color: var(--cor5);
+    font-size: 2em;
+} 
+
+main > section > article > h2{
+    font-family: var(--fonte1), sans-serif;
+    background-image:linear-gradient(to right, var(--cor1), white );
+    padding: 4px;
+    color: var(--cor5);
+    font-size: 1em;
+}
+
+p{
+    text-indent: 20px;
+}
+
+
+aside.video{
+    position: relative;
+    background-color:var(--cor4) ;
+    height: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+aside.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#add{
+    padding-top: 0px;
+    margin-top: 16px;
+    background-color: #C5EBD6;
+    border-radius: 16px 16px 16px 16px;
+}
+
+main > section#add > h2{
+    margin: 0;
+    padding: 10px;
+    background-color: var(--cor4);
+    border-radius: 16px 16px 0px 0px;
+}
+
+main > section#add > p{
+    padding: 10px;
+    margin-top: 4px;
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+}
+
+footer{
+    margin-top: 16px;
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+}
+
+footer > p{
+    margin: 0;
+}
