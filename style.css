@@ -31,7 +31,7 @@ header{
     background-image: linear-gradient(to bottom, var(--cor3) , var(--cor5));
     text-align: center;
     color: white;
-    min-width: 200px;
+    min-width: 280px;
 }
 
 header > h1{
@@ -70,7 +70,7 @@ div.menu > a{
 main{
     background-color: white;
     max-width: 800px;
-    min-width: 200px;
+    min-width: 280px;
     padding: 20px;
     margin: auto;
     border-radius: 0px 0px 16px 16px;
